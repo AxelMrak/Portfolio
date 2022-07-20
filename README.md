@@ -58,7 +58,7 @@
 
 <div id="project-access">
 	<h2>Project Access</h2>
-	<p>You can access here <a href="#">Web Site Link</a></p>
+	<p>You can access here <a href="https://incomparable-genie-11a8d5.netlify.app/">Web Site Link</a></p>
 </div>
 
 <div id="technologies">
@@ -72,12 +72,12 @@
 
 <div id="dev">
 	<h2>About me</h2>
-	<p>I`m Axel Sarmiento, from Argentina. Now, living in Italy. If you can know more: <a href="">Watch my portfolio</a> .</p> 
+	<p>I`m Axel Sarmiento, from Argentina. Now, living in Italy. If you can know more: <a href="https://incomparable-genie-11a8d5.netlify.app/">Watch my portfolio</a> .</p> 
 </div>
 
 <div id="license">
 	<h2>License</h2>
-	<p>This project use <a href="https://github.com/AxelMrak/LeChichStore/blob/main/LICENSE"> MIT LICENSE </a>. </p>
+	<p>This project use <a href="https://github.com/AxelMrak/Portfolio/blob/main/LICENSE"> MIT LICENSE </a>. </p>
 </div>
 
 <div id="thanks">
