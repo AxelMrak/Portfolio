@@ -58,7 +58,7 @@
 
 <div id="project-access">
 	<h2>Project Access</h2>
-	<p>You can access here <a href="https://incomparable-genie-11a8d5.netlify.app/">Web Site Link</a></p>
+	<p>You can access here <a href="https://incomparable-genie-11a8d5.netlify.app/" target="_blank">Web Site Link</a></p>
 </div>
 
 <div id="technologies">
@@ -72,20 +72,20 @@
 
 <div id="dev">
 	<h2>About me</h2>
-	<p>I`m Axel Sarmiento, from Argentina. Now, living in Italy. If you can know more: <a href="https://incomparable-genie-11a8d5.netlify.app/">Watch my portfolio</a> .</p> 
+	<p>I`m Axel Sarmiento, from Argentina. Now, living in Italy. If you can know more: <a href="https://incomparable-genie-11a8d5.netlify.app/" target="_blank">Watch my portfolio</a> .</p> 
 </div>
 
 <div id="license">
 	<h2>License</h2>
-	<p>This project use <a href="https://github.com/AxelMrak/Portfolio/blob/main/LICENSE"> MIT LICENSE </a>. </p>
+	<p>This project use <a href="https://github.com/AxelMrak/Portfolio/blob/main/LICENSE" target="_blank"> MIT LICENSE </a>. </p>
 </div>
 
 <div id="thanks">
 	<h2>Acknowledgments</h2>
 	<p>I feel the need to give my thanks to: </p>
 	<ul>
-		<li>Pexels for the images <a href="https://www.pexels.com/es-es/">Site Here</a></li>
-		<li>Iconos8 for the icons <a href="https://iconos8.es/">Site Here</a></li>
+		<li>Pexels for the images <a href="https://www.pexels.com/es-es/" target="_blank">Site Here</a></li>
+		<li>Iconos8 for the icons <a href="https://iconos8.es/" target="_blank">Site Here</a></li>
 		<li>My parents and my brother for their constant support.</li>
 		<li>My dear Valentina for always believing in me.</li>
 	</ul>
