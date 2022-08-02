@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap");
+@import "mixins";
+@import "variables";
+
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 25px;
+}
+
+body {
+  background-color: #000000;
+}
+
+// Styles main-container
+
+.main-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 1rem;
+}
+
+//Styles header
+
+.head {
+  grid-column: 1 / 4;
+  grid-row: 0 / 1;
+  font-family: $secondary-font;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.unit-list {
+  margin-left: 1rem;
+}
+
+//Styles presentation main
+
+.presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  grid-column: 1 / 4;
+  grid-row: 2 / 2;
+  padding: 1rem;
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.photo-me {
+  border: 3px solid #b234e2;
+  border-radius: 50%;
+}
+
+.btn-hire-me {
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-family: $secondary-font;
+  font-size: large;
+  transition: all 2s;
+}
+
+.btn-hire-me:hover {
+  border: 2px solid#B234E2;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.arrow {
+  grid-column: 2 / 3;
+  grid-row: 3 / 3;
+  margin: 0 auto;
+  animation: pulse-arrow 2s infinite alternate;
+}
+
+@keyframes pulse-arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.about-me {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  grid-column: 2 / 3;
+  grid-row: 4 / 4;
+  font-family: $primary-font;
+  color: white;
+  margin-top: 3rem;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.simulate-macOS-first {
+  display: flex;
+  flex-direction: row;
+  height: max-content;
+  background-color: #282828;
+  border-bottom: 1px solid #222222;
+  padding: 1rem;
+}
+
+.simulate-macOS-first h2 {
+  position: relative;
+  left: 34%;
+}
+
+.simulate-btn1 {
+  background-color: #f13946;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+  transition: all 0.5s;
+}
+
+.simulate-btn1:hover {
+  background-color: #f139456f;
+}
+
+.simulate-btn2 {
+  background-color: #dfb520;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+  transition: all 0.5s;
+}
+
+.simulate-btn2:hover {
+  background-color: #dfb6205f;
+}
+
+.simulate-btn3 {
+  background-color: #474848;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.simulate-btn3:hover {
+  background-color: #4748486c;
+}
+
+.simulate-macOS-second {
+  background-color: #262626;
+  padding: 1rem;
+}
+
+
+.techs {
+ // height: max-content; ACTIVATE WHEN ADD THE CONTENT
+  grid-column: 2 / 3;
+  grid-row: 5 / 5;
+  font-family: $primary-font;
+  color: white;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.simulate-macOS-first-techs {
+  display: flex;
+  flex-direction: row;
+  height: max-content;
+  background-color: #282828;
+  border-bottom: 1px solid #222222;
+  padding: 1rem;
+}
+
+.simulate-macOS-first-techs h2 {
+  position: relative;
+  left: 34%;
+}
+
+.simulate-macOS-second-techs {
+  background-color: #262626;
+  padding: 1rem;
+}
