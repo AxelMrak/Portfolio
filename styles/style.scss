@@ -33,13 +33,27 @@ body {
 // Styles main-container
 
 .main-container {
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto auto;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
+  @media screen and (max-width: $small) {
+    grid-template-columns: 20% 10% 20% auto;
+    grid-gap: 3rem;
+  }
 }
 
 //Styles header
+
+.navbar {
+  display: none;
+  @media screen and (max-width: $small) {
+    display: unset;
+    font-family: $secondary-font;
+  }
+}
 
 .head {
   grid-column: 1 / 4;
@@ -54,6 +68,9 @@ body {
   flex-direction: row;
   align-items: center;
   list-style: none;
+  @media screen and (max-width: $small) {
+    display: none;
+  }
 }
 
 .unit-list {
@@ -68,7 +85,16 @@ body {
   justify-content: space-around;
   grid-column: 1 / 4;
   grid-row: 2 / 2;
-  padding: 1rem;
+  padding: 1rem; 
+  @media screen and (max-width: $small) {
+    grid-column: 2 / 4;
+  }
+}
+
+.title-pc {
+   @media screen and (max-width: $small) {
+    display: none;
+  }
 }
 
 .photo {
@@ -90,6 +116,10 @@ body {
   font-family: $secondary-font;
   font-size: large;
   transition: all 2s;
+  @media screen and (max-width: $small) {
+    margin-top: 4rem;
+    padding: 1.5rem;
+  }
 }
 
 .btn-hire-me:hover {
@@ -103,6 +133,9 @@ body {
   grid-row: 3 / 3;
   margin: 0 auto;
   animation: pulse-arrow 2s infinite alternate;
+  @media screen and (max-width: $small) {
+    grid-column: 2 / 4;
+  }
 }
 
 @keyframes pulse-arrow {
@@ -114,18 +147,39 @@ body {
   }
 }
 
+.title-side1 {
+  position: relative;
+  top: 20%;
+  right: 20%;
+  font-size: 3rem;
+  font-family: $primary-font;
+  font-weight: 300;
+  color: white;
+  grid-column: 3 / 4;
+  grid-row: 4 / 4;
+  @media screen and (max-width: $small) {
+    display: none;
+  }
+}
+
+
 .about-me {
   height: max-content;
   display: flex;
   flex-direction: column;
-  grid-column: 2 / 3;
+  grid-column: 1 / 2;
   grid-row: 4 / 4;
   font-family: $primary-font;
   color: white;
   margin-top: 3rem;
+  margin-left: 1rem;
   overflow: hidden;
   border: 1px solid black;
   border-radius: 20px;
+  @media screen and (max-width: $small) {
+    grid-column: 1 / 5;
+    margin-left: 0%;
+  }
 }
 
 .simulate-macOS-first {
@@ -139,7 +193,7 @@ body {
 
 .simulate-macOS-first h2 {
   position: relative;
-  left: 34%;
+  margin: 0 auto;
 }
 
 .simulate-btn1 {
@@ -183,18 +237,38 @@ body {
 .simulate-macOS-second {
   background-color: #262626;
   padding: 1rem;
+  line-height: 2rem;
+}
+
+.title-side2 {
+  position: relative;
+  top: 20%;
+  margin-left: 1rem;
+  font-size: 3rem;
+  font-family: $primary-font;
+  font-weight: 300;
+  color: white;
+  grid-column: 1 / 2;
+  grid-row: 5 / 5;
+  @media screen and (max-width: $small) {
+    display: none;
+  }
 }
 
 
 .techs {
- // height: max-content; ACTIVATE WHEN ADD THE CONTENT
-  grid-column: 2 / 3;
+  grid-column: 2 / 4;
   grid-row: 5 / 5;
   font-family: $primary-font;
   color: white;
   overflow: hidden;
+  margin-right: 1rem;
   border: 1px solid black;
   border-radius: 20px;
+  @media screen and (max-width: $small) {
+    grid-column: 1 / 5;
+    margin-right: 0%;
+  }
 }
 
 .simulate-macOS-first-techs {
@@ -208,10 +282,45 @@ body {
 
 .simulate-macOS-first-techs h2 {
   position: relative;
-  left: 34%;
+  margin: 0 auto;
 }
 
 .simulate-macOS-second-techs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   background-color: #262626;
   padding: 1rem;
+}
+
+.simulate-macOS-second-techs div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  grid-column: 1 / 4;
+  grid-row: 6 / 6;
+  padding: 1rem;
+  @media screen and (max-width: $small) {
+    grid-column: 1 / 5;
+    margin-left: 0%;
+  }
+}
+
+.projects-main-title {
+  font-family: $primary-font;
+  font-weight: 300;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
 }
