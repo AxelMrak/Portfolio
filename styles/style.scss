@@ -40,8 +40,7 @@ body {
   grid-template-rows: auto auto auto auto;
   grid-gap: 2rem;
   @media screen and (max-width: $small) {
-    grid-template-columns: 20% 10% 20% auto;
-    grid-gap: 3rem;
+    grid-template-columns: auto auto auto;
   }
 }
 
@@ -87,7 +86,7 @@ body {
   grid-row: 2 / 2;
   padding: 1rem; 
   @media screen and (max-width: $small) {
-    grid-column: 2 / 4;
+    grid-column: 3 / 4;
   }
 }
 
@@ -129,12 +128,12 @@ body {
 }
 
 .arrow {
-  grid-column: 2 / 3;
+  grid-column: 1 / 4;
   grid-row: 3 / 3;
   margin: 0 auto;
   animation: pulse-arrow 2s infinite alternate;
   @media screen and (max-width: $small) {
-    grid-column: 2 / 4;
+    grid-column: 3 / 4;
   }
 }
 
