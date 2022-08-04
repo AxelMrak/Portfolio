@@ -37,10 +37,13 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
   grid-gap: 2rem;
   @media screen and (max-width: $small) {
-    grid-template-columns: auto auto auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
@@ -56,10 +59,13 @@ body {
 
 .head {
   grid-column: 1 / 4;
-  grid-row: 0 / 1;
+  grid-row: 1 / 1;
   font-family: $secondary-font;
   color: #ffffff;
   padding: 1rem;
+  @media screen and (max-width: $small) {
+    padding-left: 1rem;
+  }
 }
 
 .list {
@@ -84,14 +90,14 @@ body {
   justify-content: space-around;
   grid-column: 1 / 4;
   grid-row: 2 / 2;
-  padding: 1rem; 
+  padding: 1rem;
   @media screen and (max-width: $small) {
-    grid-column: 3 / 4;
+
   }
 }
 
 .title-pc {
-   @media screen and (max-width: $small) {
+  @media screen and (max-width: $small) {
     display: none;
   }
 }
@@ -114,7 +120,7 @@ body {
   border-radius: 20px;
   font-family: $secondary-font;
   font-size: large;
-  transition: all 2s;
+  transition: all 1s;
   @media screen and (max-width: $small) {
     margin-top: 4rem;
     padding: 1.5rem;
@@ -133,7 +139,7 @@ body {
   margin: 0 auto;
   animation: pulse-arrow 2s infinite alternate;
   @media screen and (max-width: $small) {
-    grid-column: 3 / 4;
+    
   }
 }
 
@@ -161,7 +167,6 @@ body {
   }
 }
 
-
 .about-me {
   height: max-content;
   display: flex;
@@ -176,7 +181,6 @@ body {
   border: 1px solid black;
   border-radius: 20px;
   @media screen and (max-width: $small) {
-    grid-column: 1 / 5;
     margin-left: 0%;
   }
 }
@@ -197,11 +201,7 @@ body {
 
 .simulate-btn1 {
   background-color: #f13946;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  margin-right: 0.3rem;
-  transition: all 0.5s;
+  @include simulate-btn-properties;
 }
 
 .simulate-btn1:hover {
@@ -210,11 +210,7 @@ body {
 
 .simulate-btn2 {
   background-color: #dfb520;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  margin-right: 0.3rem;
-  transition: all 0.5s;
+  @include simulate-btn-properties;
 }
 
 .simulate-btn2:hover {
@@ -223,10 +219,7 @@ body {
 
 .simulate-btn3 {
   background-color: #474848;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  transition: all 0.5s;
+  @include simulate-btn-properties;
 }
 
 .simulate-btn3:hover {
@@ -254,7 +247,6 @@ body {
   }
 }
 
-
 .techs {
   grid-column: 2 / 4;
   grid-row: 5 / 5;
@@ -265,7 +257,6 @@ body {
   border: 1px solid black;
   border-radius: 20px;
   @media screen and (max-width: $small) {
-    grid-column: 1 / 5;
     margin-right: 0%;
   }
 }
@@ -302,24 +293,86 @@ body {
   margin: 1rem;
 }
 
+.projects-main-title {
+  grid-column: 1 / 4;
+  grid-row: 6 / 6;
+  font-family: $primary-font;
+  font-weight: 300;
+  font-size: 3rem;
+  margin: 2rem;
+  color: white;
+  text-align: center;
+}
+
 .projects {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   grid-column: 1 / 4;
-  grid-row: 6 / 6;
+  grid-row: 7 / 7;
   padding: 1rem;
   @media screen and (max-width: $small) {
-    grid-column: 1 / 5;
+    flex-direction: column;
+    justify-content: space-between;
     margin-left: 0%;
   }
 }
 
-.projects-main-title {
-  font-family: $primary-font;
-  font-weight: 300;
-  font-size: 3rem;
-  color: white;
-  text-align: center;
+.project-1,
+.project-2,
+.project-3 {
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  @include properties-project;
+  @media screen and (max-width: $small) {
+    padding: 1rem;
+    padding-top: 0;
+    width: 80vw;
+    font-weight: 400;
+    margin-right: 0%;
+  }
 }
+
+.project-1:hover,
+.project-2:hover,
+.project-3:hover {
+  box-shadow: 0 8px 32px 0 rgba(155, 155, 155, 0.178);
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.project-title {
+  font-family: $primary-font;
+  font-weight: 400;
+  margin: 1rem;
+}
+
+.project-techs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.link-page {
+  width: 20%;
+  background-color: white;
+  margin: 1rem;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-family: $secondary-font;
+  font-size: large;
+  transition: all 1s;
+  @media screen and (max-width: $small) {
+    padding: 0.5rem;
+  }
+}
+
+.link-page:hover {
+  border: 1px solid#B234E2;
+}
+
+.link-page a:active, .link-page a:visited, .link-page a:link {
+  text-decoration: none;
+  color: black;
+}
+

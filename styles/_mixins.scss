@@ -1,0 +1,22 @@
+@mixin simulate-btn-properties {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+  transition: all 0.5s;
+}
+
+@mixin properties-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  font-family: $secondary-font;
+  font-weight: 300;
+  background: rgba(128, 128, 128, 0.144);
+  border-radius: 10px;
+  transition: all 1s;
+}
