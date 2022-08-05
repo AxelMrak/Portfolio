@@ -38,11 +38,15 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto auto auto auto;
-  grid-gap: 2rem;
+  row-gap: 5rem;
+  column-gap: 1rem;
   @media screen and (max-width: $small) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  @media screen and (max-width: $medium) {
+    width: 90vw;
   }
 }
 
@@ -62,9 +66,6 @@ body {
   font-family: $secondary-font;
   color: #ffffff;
   padding: 1rem;
-  @media screen and (max-width: $small) {
-    padding-left: 1rem;
-  }
 }
 
 .list {
@@ -89,15 +90,23 @@ body {
   justify-content: space-around;
   grid-column: 1 / 4;
   grid-row: 2 / 2;
-  padding: 1rem;
   @media screen and (max-width: $small) {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 .title-pc {
   @media screen and (max-width: $small) {
     display: none;
+  }
+}
+
+.title-mobile {
+  display: none;
+  @media screen and (max-width: $small) {
+    display: initial;
   }
 }
 
@@ -112,6 +121,11 @@ body {
   border: 3px solid #b234e2;
   border-radius: 50%;
   animation: pulse-photo 2s infinite alternate-reverse;
+  @media screen and (max-width: $small) {
+    width: 150px;
+    height: 150px;
+    margin: 2rem;
+  }
 }
 
 @keyframes pulse-photo {
@@ -133,11 +147,11 @@ body {
   border: 1px solid black;
   border-radius: 20px;
   font-family: $secondary-font;
+  font-weight: 600;
   font-size: large;
   transition: all 1s;
   @media screen and (max-width: $small) {
-    margin-top: 4rem;
-    padding: 1.5rem;
+    margin-top: 1rem;
   }
 }
 
@@ -167,14 +181,13 @@ body {
 }
 
 .title-side1 {
-  position: relative;
-  top: 20%;
-  right: 20%;
+  margin: auto;
+  text-align: center;
   font-size: 3rem;
   font-family: $primary-font;
   font-weight: 300;
   color: white;
-  grid-column: 3 / 4;
+  grid-column: 2 / 4;
   grid-row: 4 / 4;
   @media screen and (max-width: $small) {
     display: none;
@@ -189,8 +202,6 @@ body {
   grid-row: 4 / 4;
   font-family: $primary-font;
   color: white;
-  margin-top: 3rem;
-  margin-left: 1rem;
   overflow: hidden;
   border: 1px solid black;
   border-radius: 20px;
@@ -247,9 +258,8 @@ body {
 }
 
 .title-side2 {
-  position: relative;
-  top: 20%;
-  margin-left: 1rem;
+  margin: auto;
+  text-align: center;
   font-size: 3rem;
   font-family: $primary-font;
   font-weight: 300;
@@ -267,7 +277,6 @@ body {
   font-family: $primary-font;
   color: white;
   overflow: hidden;
-  margin-right: 1rem;
   border: 1px solid black;
   border-radius: 20px;
   @media screen and (max-width: $small) {
@@ -287,6 +296,12 @@ body {
 .simulate-macOS-first-techs h2 {
   position: relative;
   margin: 0 auto;
+  @media screen and (max-width: $small) {
+    text-align: center;
+  }
+  @media screen and (max-width: $medium) {
+    text-align: center;
+  }
 }
 
 .simulate-macOS-second-techs {
@@ -305,85 +320,10 @@ body {
   justify-content: center;
   align-items: center;
   margin: 1rem;
+  transition: all 5s;
 }
 
-.projects-main-title {
-  grid-column: 1 / 4;
-  grid-row: 6 / 6;
-  font-family: $primary-font;
-  font-weight: 300;
-  font-size: 3rem;
-  margin: 2rem;
-  color: white;
-  text-align: center;
-}
-
-.projects {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  grid-column: 1 / 4;
-  grid-row: 7 / 7;
-  @media screen and (max-width: $small) {
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 0%;
-  }
-}
-
-.project-1,
-.project-2,
-.project-3 {
-  @include properties-project;
-  @media screen and (max-width: $small) {
-    padding: 1rem;
-    padding-top: 0;
-    width: 80vw;
-    font-weight: 400;
-    margin-right: 0%;
-  }
-}
-
-.project-1:hover,
-.project-2:hover,
-.project-3:hover {
-  box-shadow: 0 8px 32px 0 rgba(155, 155, 155, 0.178);
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.project-title {
-  font-family: $primary-font;
-  font-weight: 400;
-  margin: 1rem;
-}
-
-.project-techs {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.link-page {
-  width: 20%;
-  background-color: white;
-  margin: 1rem;
-  border: 1px solid white;
-  border-radius: 15px;
-  font-family: $secondary-font;
-  font-size: large;
-  transition: all 1s;
-  @media screen and (max-width: $small) {
-    padding: 0.5rem;
-  }
-}
-
-.link-page:hover {
-  border: 1px solid#B234E2;
-}
-
-.link-page a:active, .link-page a:visited, .link-page a:link {
-  text-decoration: none;
-  color: black;
+.simulate-macOS-second-techs img:hover {
+ 
 }
 
