@@ -30,6 +30,66 @@ body {
   background-color: #000000;
 }
 
+// Styles for small devices
+
+.xs {
+  display: none;
+  @media screen and (max-width: $extra-small) {
+    max-width: 70vw;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+.xs a {
+  @media screen and (max-width: $extra-small) {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+.xs h1 {
+  color: #b234e2;
+}
+
+.title-xs {
+  @media screen and (max-width: $extra-small) {
+    margin: 0.5rem;
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 20px;
+  }
+}
+
+.list-xs {
+  @media screen and (max-width: $extra-small) {
+    list-style: none;
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+.proyects-xs h3 {
+  @media screen and (max-width: $extra-small) {
+    margin: 1rem;
+    font-weight: 300;
+  }
+}
+
+.btn-xs {
+  @media screen and (max-width: $extra-small) {
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+}
+
 // Styles main-container
 
 .main-container {
@@ -47,6 +107,9 @@ body {
   }
   @media screen and (max-width: $medium) {
     width: 90vw;
+  }
+  @media screen and (max-width: $extra-small) {
+    display: none;
   }
 }
 
@@ -109,7 +172,6 @@ body {
     display: initial;
   }
 }
-
 .photo {
   display: flex;
   flex-direction: column;
@@ -167,7 +229,6 @@ body {
   margin: 0 auto;
   animation: pulse-arrow 2s infinite alternate;
   @media screen and (max-width: $small) {
-    
   }
 }
 
@@ -205,6 +266,7 @@ body {
   overflow: hidden;
   border: 1px solid black;
   border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   @media screen and (max-width: $small) {
     margin-left: 0%;
   }
@@ -279,6 +341,7 @@ body {
   overflow: hidden;
   border: 1px solid black;
   border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   @media screen and (max-width: $small) {
     margin-right: 0%;
   }
@@ -324,6 +387,107 @@ body {
 }
 
 .simulate-macOS-second-techs img:hover {
- 
 }
 
+.title-projects {
+  grid-column: 2 / 4;
+  grid-row: 6 / 6;
+  color: white;
+  @media screen and (max-width: $medium) {
+    text-align: center;
+  }
+}
+
+.projects {
+  max-height: 100vh;
+  grid-column: 1 / 4;
+  grid-row: 7 / 7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  @media screen and (max-width: $small) {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  @media screen and (max-width: $small) {
+    margin: 1rem;
+  }
+}
+
+.project:hover {
+  animation: div-project 5s infinite alternate-reverse;
+}
+
+@keyframes div-project {
+  100% {
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  50% {
+    border: 2px solid gray;
+    border-radius: 20px;
+  }
+
+  0% {
+    border: 2px solid white;
+    border-radius: 25px;
+  }
+}
+
+.project-title {
+  font-family: $primary-font;
+  font-weight: 400;
+}
+
+.project-description {
+  font-family: $secondary-font;
+  font-weight: 300;
+}
+
+.project-techs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-btn a:link,
+.project-btn a:active,
+.project-btn a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.project-btn {
+  font-family: $secondary-font;
+  color: black;
+  margin: 1rem;
+  padding: 0.6rem;
+  border: 1px solid black;
+  border-radius: 25px;
+  transition: all 1s;
+}
+
+.project-btn:hover {
+  border: 1px solid#B234E2;
+  background-color: #000000;
+  color: white; //ESTO HACERLO EN JS
+}
