@@ -7,113 +7,103 @@
     <link type="image/png" sizes="16x16" rel="icon" href="./ico/favicon.png" />
     <title>Axel Portfolio</title>
     <!-- Imports -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"/>
     <link href="./styles/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    
+    <!-- PAGE IN SMALLEST DEVICES -->
     <div class="xs">
-    <p class="title-xs"><strong>For a better experience, view this page on a larger device. THIS AFFECT TO PROJECTS PAGES TOO.</strong></h2>
-    <h1>Hi, my name is Axel Mrak. I´m Front-End Developer.</h1>
-    <button class="btn-xs" type="button">Download my CV</button>
-    <h2>My technologies</h2>
-    <ul class="list-xs">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>SASS</li>
-      <li>JavaScript</li>
-      <li>Bootstrap</li>
-      <li>Tailwind</li>
-      <li>Figma</li>
-    </ul>
-    <div class="proyects-xs">
-      <h2>My proyects</h2>
-      <h3>Le Chic Store</h3>
-      <button type="button" class="btn-xs"><a href="https://lechic-axelmrak.netlify.app/" class="link-project">Visit website</a></button>
-      <h3>FreeGames</h2>
-      <button type="button" class="btn-xs"><a href="https://freegames-axelmrak.netlify.app/" class="link-project">Visit website</a></button>
-      <h3>VAT Calculator</h3>
-      <button type="button" class="btn-xs"><a href="https://vatcalc-axelmrak.netlify.app/" class="link-project">Visit website</a></button>
+      <p class="title-xs"><strong>For a better experience, view this page on a larger device. THIS AFFECT TO PROJECTS PAGES TOO.</strong></h2>
+      <h1>Hi, my name is Axel Mrak. I´m Front-End Developer.</h1>
+      <button class="btn-xs" type="button">Download my CV</button>
+      <h2>My technologies</h2>
+      <ul class="list-xs">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>SASS</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+        <li>Tailwind</li>
+        <li>Figma</li>
+      </ul>
+      <div class="proyects-xs">
+        <h2>My proyects</h2>
+        <h3>Le Chic Store</h3>
+        <button type="button" class="btn-xs"><a href="https://lechic-axelmrak.netlify.app/" target="_blank" class="link-project">Visit website</a></button>
+        <h3>FreeGames</h2>
+        <button type="button" class="btn-xs"><a href="https://freegames-axelmrak.netlify.app/" target="_blank" class="link-project">Visit website</a></button>
+        <h3>VAT Calculator</h3>
+        <button type="button" class="btn-xs"><a href="https://vatcalc-axelmrak.netlify.app/" target="_blank" class="link-project">Visit website</a></button>
+      </div>
     </div>
-    </div>
-
+ <!-- END PAGE IN SMALLEST DEVICES -->
+ <!-- MAIN CONTAINER WITH GRID -->
     <div class="main-container">
+      <!-- START HEAD -->
       <header class="head">
         <ul class="list">
-          <li class="unit-list">Home</li>
-          <li class="unit-list">Contact</li>
-          <li class="unit-list">About Me</li>
+          <li class="unit-list">
+           <a href="#home">Home</a>
+          </li>
+          <li class="unit-list">
+           <a href="#about">About Me</a>
+          </li>
+          <li class="unit-list">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="unit-list">
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-dark bg-darken">
           <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarText"
-              aria-controls="navbarText"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About Me</a>
+                  <a class="nav-link" href="#about">About Me</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
+        <div class="pages-head">
+          <a href="https://www.linkedin.com/in/axelmrak/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#0078d4" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"/><path d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z" opacity=".05"/><path d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z" opacity=".07"/><path fill="#fff" d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"/></svg></a> 
+          <a href="https://github.com/AxelMrak" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="48px" height="48px"><linearGradient id="KpzH_ttTMIjq8dhx1zD2pa" x1="30.999" x2="30.999" y1="16" y2="55.342" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#KpzH_ttTMIjq8dhx1zD2pa)" d="M25.008,56.007c-0.003-0.368-0.006-1.962-0.009-3.454l-0.003-1.55 c-6.729,0.915-8.358-3.78-8.376-3.83c-0.934-2.368-2.211-3.045-2.266-3.073l-0.124-0.072c-0.463-0.316-1.691-1.157-1.342-2.263 c0.315-0.997,1.536-1.1,2.091-1.082c3.074,0.215,4.63,2.978,4.694,3.095c1.569,2.689,3.964,2.411,5.509,1.844 c0.144-0.688,0.367-1.32,0.659-1.878C20.885,42.865,15.27,40.229,15.27,30.64c0-2.633,0.82-4.96,2.441-6.929 c-0.362-1.206-0.774-3.666,0.446-6.765l0.174-0.442l0.452-0.144c0.416-0.137,2.688-0.624,7.359,2.433 c1.928-0.494,3.969-0.749,6.074-0.759c2.115,0.01,4.158,0.265,6.09,0.759c4.667-3.058,6.934-2.565,7.351-2.433l0.451,0.145 l0.174,0.44c1.225,3.098,0.813,5.559,0.451,6.766c1.618,1.963,2.438,4.291,2.438,6.929c0,9.591-5.621,12.219-10.588,13.087 c0.563,1.065,0.868,2.402,0.868,3.878c0,1.683-0.007,7.204-0.015,8.402l-2-0.014c0.008-1.196,0.015-6.708,0.015-8.389 c0-2.442-0.943-3.522-1.35-3.874l-1.73-1.497l2.274-0.253c5.205-0.578,10.525-2.379,10.525-11.341c0-2.33-0.777-4.361-2.31-6.036 l-0.43-0.469l0.242-0.587c0.166-0.401,0.894-2.442-0.043-5.291c-0.758,0.045-2.568,0.402-5.584,2.447l-0.384,0.259l-0.445-0.123 c-1.863-0.518-3.938-0.796-6.001-0.806c-2.052,0.01-4.124,0.288-5.984,0.806l-0.445,0.123l-0.383-0.259 c-3.019-2.044-4.833-2.404-5.594-2.449c-0.935,2.851-0.206,4.892-0.04,5.293l0.242,0.587l-0.429,0.469 c-1.536,1.681-2.314,3.712-2.314,6.036c0,8.958,5.31,10.77,10.504,11.361l2.252,0.256l-1.708,1.49 c-0.372,0.325-1.03,1.112-1.254,2.727l-0.075,0.549l-0.506,0.227c-1.321,0.592-5.839,2.162-8.548-2.485 c-0.015-0.025-0.544-0.945-1.502-1.557c0.646,0.639,1.433,1.673,2.068,3.287c0.066,0.19,1.357,3.622,7.28,2.339l1.206-0.262 l0.012,3.978c0.003,1.487,0.006,3.076,0.009,3.444L25.008,56.007z"/><linearGradient id="KpzH_ttTMIjq8dhx1zD2pb" x1="32" x2="32" y1="5" y2="59.167" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#KpzH_ttTMIjq8dhx1zD2pb)" d="M32,58C17.663,58,6,46.337,6,32S17.663,6,32,6s26,11.663,26,26S46.337,58,32,58z M32,8 C18.767,8,8,18.767,8,32s10.767,24,24,24s24-10.767,24-24S45.233,8,32,8z"/></svg></a>
+        </div>
       </header>
-      <main class="presentation">
+       <!-- END HEAD -->
+       <!-- START PRESENTATION -->
+      <main class="presentation" id="home">
         <div class="title-pc">
-          <img
-            src="./img/macbook.png"
-            alt="Macbook with title: Hi, I'm Axel, Front-End Developer"
-            class="pc"
-            height="400"
-            draggable="false"
-          />
+          <img src="./img/macbook.png" alt="Macbook with title: Hi, I'm Axel, Front-End Developer" class="pc" height="400"  draggable="false"/>
         </div>
         <div class="title-mobile">
           <img src="./img/title.svg" alt="" width="150">
         </div>
         <div class="photo">
-          <img
-            src="./img/AxelPhoto.png"
-            alt="A photo of me"
-            class="photo-me"
-            width="200"
-            height="200"
-            draggable="false"
-          />
+          <img src="./img/AxelPhoto.png" alt="A photo of me" class="photo-me"  width="200" height="200" draggable="false"/>
           <button class="btn-hire-me" type="button">Download my CV</button>
         </div>
       </main>
-      <img
-        src="./img/keyboard_double_arrow_down_white_48dp.svg"
-        alt="arrow down"
-        class="arrow"
-      />
+      <img src="./img/keyboard_double_arrow_down_white_48dp.svg" alt="arrow down" class="arrow"/>
+      <!-- END PRESENTATION -->
+      <!-- START ABOUT ME SECTION -->
       <div class="title-side1">
         <h2 class="title-side1">Know more than me</h2>
       </div>
-      <section class="about-me">
+      <section class="about-me" id="about">
         <div class="simulate-macOS-first">
           <div class="simulate-btn1"></div>
           <div class="simulate-btn2"></div>
@@ -132,6 +122,8 @@
           </p>
         </div>
       </section>
+      <!-- END ABOUT ME SECTION -->
+      <!-- START TECHNOLOGIES SECTION -->
       <div class="title-side2">
         <h2 class="title-side2">Technologies I use</h2>
       </div>
@@ -181,56 +173,77 @@
           </div>
         </div>
       </section>
-      <h2 class="title-projects">My projects</h2>
-     <section class="projects">
-      <div class="project-1 project">
-        <img src="./img/project-1.png" alt="" class="project-1-img" width="300">
-        <h3 class="project-title">Le Chic Store</h3>
-        <p class="project-description">Simulate store of clothes.</p>
-        <div class="project-techs">
-          <img src="./img/HTML.png" alt="" width="35">
-          <img src="./img/css.png" alt="" width="35">
-          <img src="./img/sass.png" alt="" width="35">
-          <img src="./img/JavaScript.png" alt="" width="35">
-          <img src="./img/bootstrap.png" alt="" width="35">
+      <!-- END TECHNOLOGIES SECTION -->
+      <!-- START PROJECTS SECTION -->
+      <h2 class="title-projects" id="projects">My projects</h2>
+      <section class="projects">
+        <div class="project-1 project">
+          <img src="./img/project-1.png" alt="" class="project-1-img" width="300">
+          <h3 class="project-title">Le Chic Store</h3>
+          <p class="project-description">Simulate store of clothes.</p>
+          <div class="project-techs">
+            <img src="./img/HTML.png" alt="" width="35">
+            <img src="./img/css.png" alt="" width="35">
+            <img src="./img/sass.png" alt="" width="35">
+            <img src="./img/JavaScript.png" alt="" width="35">
+            <img src="./img/bootstrap.png" alt="" width="35">
+          </div>
+          <button type="button" class="project-btn"><a href="https://lechic-axelmrak.netlify.app/" target="_blank" class="link-project">Visit website</a></button>
         </div>
-        <button type="button" class="project-btn"><a href="https://lechic-axelmrak.netlify.app/" class="link-project">Visit website</a></button>
-      </div>
-      <div class="project-2 project">
-        <img src="./img/project-2.png" alt="" class="project-1-img" width="300">
-        <h3 class="project-title">FreeGames</h3>
-        <p class="project-description">Free game finder using API.</p>
-        <div class="project-techs">
-          <img src="./img/HTML.png" alt="" width="35">
-          <img src="./img/css.png" alt="" width="35">
-          <img src="./img/sass.png" alt="" width="35">
-          <img src="./img/JavaScript.png" alt="" width="35">
-          <img src="./img/bootstrap.png" alt="" width="35">
+        <div class="project-2 project">
+          <img src="./img/project-2.png" alt="" class="project-1-img" width="300">
+          <h3 class="project-title">FreeGames</h3>
+          <p class="project-description">Free game finder using API.</p>
+          <div class="project-techs">
+            <img src="./img/HTML.png" alt="" width="35">
+            <img src="./img/css.png" alt="" width="35">
+            <img src="./img/sass.png" alt="" width="35">
+            <img src="./img/JavaScript.png" alt="" width="35">
+            <img src="./img/bootstrap.png" alt="" width="35">
+          </div>
+          <button type="button" class="project-btn"><a href="https://freegames-axelmrak.netlify.app/" target="_blank" class="link-project">Visit website</a></button>
         </div>
-        <button type="button" class="project-btn"><a href="https://freegames-axelmrak.netlify.app/" class="link-project">Visit website</a></button>
-      </div>
-      <div class="project-3 project">
-        <img src="./img/project-3.png" alt="" class="project-1-img" width="300">
-        <h3 class="project-title">VAT Calculator</h3>
-        <p class="project-description">You will can calculate the VAT of a product.</p>
-        <div class="project-techs">
-          <img src="./img/HTML.png" alt="" width="35">
-          <img src="./img/css.png" alt="" width="35">
-          <img src="./img/sass.png" alt="" width="35">
-          <img src="./img/JavaScript.png" alt="" width="35">
-          <img src="./img/bootstrap.png" alt="" width="35">
+        <div class="project-3 project">
+          <img src="./img/project-3.png" alt="" class="project-1-img" width="300">
+          <h3 class="project-title">VAT Calculator</h3>
+          <p class="project-description">You will can calculate the VAT of a product.</p>
+          <div class="project-techs">
+            <img src="./img/HTML.png" alt="" width="35">
+            <img src="./img/css.png" alt="" width="35">
+            <img src="./img/sass.png" alt="" width="35">
+            <img src="./img/JavaScript.png" alt="" width="35">
+            <img src="./img/bootstrap.png" alt="" width="35">
+          </div>
+          <button type="button" class="project-btn"><a href="https://vatcalc-axelmrak.netlify.app/" target="_blank" class="link-project">Visit website</a></button>
         </div>
-        <button type="button" class="project-btn"><a href="https://vatcalc-axelmrak.netlify.app/" class="link-project">Visit website</a></button>
-      </div>
      </section>
+     <!-- END PROJECTS SECTION -->
+     <!-- START CONTACT SECTION -->
+      <section class="contact-me" id="contact">
+        <h2>Contact</h2>
+        <h3>Do you have a project in mind?</h3>
+        <p>Let's talk!!</p>
+        <button type="button" class="button-contact"><a href="mailto:axelmrak@gmail.com" target="_blank">Send email</a></button>
+        <div class="whatsapp-contact">
+          <img src="./img/icons8-whatsapp-48.png" alt="">
+          <p>+54 261-245-1138</p>
+        </div>
+      </section>
+      <!-- END CONTACT SECTION -->
+      <!-- START FOOTER -->
+      <footer class="foot">
+        <p>Copyright© | Coded with ❤ by Axel Sarmiento</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/axelmrak/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="40px" height="40px"><path fill="#0078d4" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"/><path d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z" opacity=".05"/><path d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z" opacity=".07"/><path fill="#fff" d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"/></svg></a> 
+          <a href="https://github.com/AxelMrak" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="40px" height="40px"><linearGradient id="KpzH_ttTMIjq8dhx1zD2pa" x1="30.999" x2="30.999" y1="16" y2="55.342" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#KpzH_ttTMIjq8dhx1zD2pa)" d="M25.008,56.007c-0.003-0.368-0.006-1.962-0.009-3.454l-0.003-1.55 c-6.729,0.915-8.358-3.78-8.376-3.83c-0.934-2.368-2.211-3.045-2.266-3.073l-0.124-0.072c-0.463-0.316-1.691-1.157-1.342-2.263 c0.315-0.997,1.536-1.1,2.091-1.082c3.074,0.215,4.63,2.978,4.694,3.095c1.569,2.689,3.964,2.411,5.509,1.844 c0.144-0.688,0.367-1.32,0.659-1.878C20.885,42.865,15.27,40.229,15.27,30.64c0-2.633,0.82-4.96,2.441-6.929 c-0.362-1.206-0.774-3.666,0.446-6.765l0.174-0.442l0.452-0.144c0.416-0.137,2.688-0.624,7.359,2.433 c1.928-0.494,3.969-0.749,6.074-0.759c2.115,0.01,4.158,0.265,6.09,0.759c4.667-3.058,6.934-2.565,7.351-2.433l0.451,0.145 l0.174,0.44c1.225,3.098,0.813,5.559,0.451,6.766c1.618,1.963,2.438,4.291,2.438,6.929c0,9.591-5.621,12.219-10.588,13.087 c0.563,1.065,0.868,2.402,0.868,3.878c0,1.683-0.007,7.204-0.015,8.402l-2-0.014c0.008-1.196,0.015-6.708,0.015-8.389 c0-2.442-0.943-3.522-1.35-3.874l-1.73-1.497l2.274-0.253c5.205-0.578,10.525-2.379,10.525-11.341c0-2.33-0.777-4.361-2.31-6.036 l-0.43-0.469l0.242-0.587c0.166-0.401,0.894-2.442-0.043-5.291c-0.758,0.045-2.568,0.402-5.584,2.447l-0.384,0.259l-0.445-0.123 c-1.863-0.518-3.938-0.796-6.001-0.806c-2.052,0.01-4.124,0.288-5.984,0.806l-0.445,0.123l-0.383-0.259 c-3.019-2.044-4.833-2.404-5.594-2.449c-0.935,2.851-0.206,4.892-0.04,5.293l0.242,0.587l-0.429,0.469 c-1.536,1.681-2.314,3.712-2.314,6.036c0,8.958,5.31,10.77,10.504,11.361l2.252,0.256l-1.708,1.49 c-0.372,0.325-1.03,1.112-1.254,2.727l-0.075,0.549l-0.506,0.227c-1.321,0.592-5.839,2.162-8.548-2.485 c-0.015-0.025-0.544-0.945-1.502-1.557c0.646,0.639,1.433,1.673,2.068,3.287c0.066,0.19,1.357,3.622,7.28,2.339l1.206-0.262 l0.012,3.978c0.003,1.487,0.006,3.076,0.009,3.444L25.008,56.007z"/><linearGradient id="KpzH_ttTMIjq8dhx1zD2pb" x1="32" x2="32" y1="5" y2="59.167" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#KpzH_ttTMIjq8dhx1zD2pb)" d="M32,58C17.663,58,6,46.337,6,32S17.663,6,32,6s26,11.663,26,26S46.337,58,32,58z M32,8 C18.767,8,8,18.767,8,32s10.767,24,24,24s24-10.767,24-24S45.233,8,32,8z"/></svg></a>
+        </div>
+      </footer>
+    <!-- END FOOTER -->
     </div>
-
+    <!-- END MAIN CONTAINER WITH GRID -->
     <!-- Scripts  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="../js/index.js"></script>
+    <!--END Scripts  -->
   </body>
 </html>
