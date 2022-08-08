@@ -3,10 +3,15 @@
 @import "mixins";
 @import "variables";
 
-// FORMAT HTML
+// FORMAT HTML, SOME GET TO NORMALIZE.CSS
 
 :root {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
+}
+
+html {
+  line-height: 1.15; 
+  -webkit-text-size-adjust: 100%;
 }
 
 * {
@@ -31,6 +36,13 @@
 
 body {
   background-color: #000000;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
 }
 
 // Styles for small devices
@@ -243,10 +255,11 @@ body {
   }
 }
 
+
 .btn-hire-me:hover {
   border: 2px solid#B234E2;
   background-color: #000000;
-  color: #ffffff;
+  color: white;
 }
 
 .arrow {
@@ -413,6 +426,15 @@ body {
   transition: all 5s;
 }
 
+.img-tech {
+  margin: 1rem;
+  transition: all 2s;
+}
+
+.img-tech:hover {
+  width: 100px;
+}
+
 // Styles projects
 
 .title-projects {
@@ -507,16 +529,18 @@ body {
 }
 
 .project-btn {
+  border-radius: 20px;
   font-family: $secondary-font;
+  font-weight: 500;
   color: black;
-  margin: 1rem;
-  padding: 0.6rem;
+  margin: 2rem;
+  padding: 1rem;
   border: 1px solid black;
   border-radius: 25px;
   transition: all 1s;
 }
 
-.project-btn:hover {
+.btn-with-animation:hover {
   border: 1px solid#B234E2;
   background-color: #000000;
   color: white; //ESTO HACERLO EN JS
@@ -556,12 +580,15 @@ body {
 }
 
 .button-contact {
-  font-family: $secondary-font;
   border: 1px solid black;
   border-radius: 20px;
+  font-family: $secondary-font;
+  font-weight: 500;
+  color: black;
+  margin: 2rem;
   padding: 1rem;
+  transition: all 1s;
 }
-
 .button-contact a:active,
 .button-contact a:visited,
 .button-contact a:link {
@@ -579,7 +606,7 @@ body {
 
 .whatsapp-contact p {
   font-family: $secondary-font;
-  font-size: medium;
+  font-size: larger;
   font-weight: 400;
   margin: 0.5rem;
   position: relative;
