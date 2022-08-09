@@ -773,13 +773,6 @@ button,
           align-items: center;
 }
 
-.project-btn a:link,
-.project-btn a:active,
-.project-btn a:visited {
-  text-decoration: none;
-  color: black;
-}
-
 .project-btn {
   border-radius: 20px;
   font-family: "Source Sans Pro", sans-serif;
@@ -796,7 +789,13 @@ button,
 .btn-with-animation:hover {
   border: 1px solid #B234E2;
   background-color: #000000;
-  color: white;
+}
+
+.btn-with-animation a:link,
+.btn-with-animation a:active,
+.btn-with-animation a:visited {
+  text-decoration: none;
+  color: black;
 }
 
 .contact-me {
@@ -853,13 +852,6 @@ button,
   padding: 1rem;
   -webkit-transition: all 1s;
   transition: all 1s;
-}
-
-.button-contact a:active,
-.button-contact a:visited,
-.button-contact a:link {
-  text-decoration: none;
-  color: black;
 }
 
 .whatsapp-contact {
