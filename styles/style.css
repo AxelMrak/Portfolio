@@ -624,21 +624,21 @@ button,
 
 @-webkit-keyframes pulse-tech {
   0% {
-    opacity: 1;
+    opacity: 0.8;
   }
   100% {
-    opacity: 0.8;
-    width: 90%;
+    opacity: 1;
+    width: 95px;
   }
 }
 
 @keyframes pulse-tech {
   0% {
-    opacity: 1;
+    opacity: 0.8;
   }
   100% {
-    opacity: 0.8;
-    width: 90%;
+    opacity: 1;
+    width: 95px;
   }
 }
 
