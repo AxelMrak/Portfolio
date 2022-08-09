@@ -426,12 +426,21 @@ button,
 }
 
 .img-tech {
-  margin: 1rem;
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .img-tech:hover {
-  width: 100px;
+  animation: pulse-tech 1s infinite alternate;
+}
+
+@keyframes pulse-tech {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+    width: 90%;
+  }
 }
 
 // Styles projects

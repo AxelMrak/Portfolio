@@ -613,13 +613,33 @@ button,
 }
 
 .img-tech {
-  margin: 1rem;
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .img-tech:hover {
-  width: 100px;
+  -webkit-animation: pulse-tech 1s infinite alternate;
+          animation: pulse-tech 1s infinite alternate;
+}
+
+@-webkit-keyframes pulse-tech {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+    width: 90%;
+  }
+}
+
+@keyframes pulse-tech {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+    width: 90%;
+  }
 }
 
 .title-projects {
