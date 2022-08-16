@@ -701,4 +701,16 @@ button,
   padding: 1rem;
   color: white;
   text-align: center;
+}
+
+.link-wp:link,
+.link-wp:active,
+.link-wp:visited {
+  text-decoration: none;
+  color: white;
+  transition: all 1s;
+}
+
+.link-wp:hover {
+  color: #25D366;
 }/*# sourceMappingURL=style.css.map */
