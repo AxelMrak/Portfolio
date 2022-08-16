@@ -32,7 +32,7 @@ buttons.forEach(btn => {
 sections.forEach(section => {
     const appearSections = event => {
         let positionSection = section.getBoundingClientRect().top;
-        let screenHeight = window.innerHeight / 3;
+        let screenHeight = window.innerHeight / 3.5;
         if (positionSection < screenHeight) {
             section.style.transition = `all 0.5s`; //Set transition for smooth effect
             section.style.opacity = `1`; //Appear

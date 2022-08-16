@@ -476,12 +476,38 @@ button,
 }
 
 .img-tech {
+<<<<<<< HEAD
   margin: 1rem;
   transition: all 2s;
+=======
+  -webkit-transition: all 1s;
+  transition: all 1s;
+>>>>>>> 24cae318a42d3a26832cc800aecc188da23927e0
 }
 
 .img-tech:hover {
-  width: 100px;
+  -webkit-animation: pulse-tech 1s infinite alternate;
+          animation: pulse-tech 1s infinite alternate;
+}
+
+@-webkit-keyframes pulse-tech {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    width: 95px;
+  }
+}
+
+@keyframes pulse-tech {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    width: 95px;
+  }
 }
 
 .title-projects {
@@ -589,13 +615,6 @@ button,
   align-items: center;
 }
 
-.project-btn a:link,
-.project-btn a:active,
-.project-btn a:visited {
-  text-decoration: none;
-  color: black;
-}
-
 .project-btn {
   border-radius: 20px;
   font-family: "Source Sans Pro", sans-serif;
@@ -611,7 +630,13 @@ button,
 .btn-with-animation:hover {
   border: 1px solid #B234E2;
   background-color: #000000;
-  color: white;
+}
+
+.btn-with-animation a:link,
+.btn-with-animation a:active,
+.btn-with-animation a:visited {
+  text-decoration: none;
+  color: black;
 }
 
 .contact-me {
@@ -655,13 +680,6 @@ button,
   margin: 2rem;
   padding: 1rem;
   transition: all 1s;
-}
-
-.button-contact a:active,
-.button-contact a:visited,
-.button-contact a:link {
-  text-decoration: none;
-  color: black;
 }
 
 .whatsapp-contact {
