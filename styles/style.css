@@ -476,13 +476,7 @@ button,
 }
 
 .img-tech {
-<<<<<<< HEAD
-  margin: 1rem;
-  transition: all 2s;
-=======
-  -webkit-transition: all 1s;
   transition: all 1s;
->>>>>>> 24cae318a42d3a26832cc800aecc188da23927e0
 }
 
 .img-tech:hover {
@@ -509,7 +503,6 @@ button,
     width: 95px;
   }
 }
-
 .title-projects {
   grid-column: 1/4;
   grid-row: 6/6;
@@ -532,6 +525,7 @@ button,
   grid-column: 1/4;
   grid-row: 7/7;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
