@@ -50,7 +50,6 @@ button,
 .xs {
   display: none;
   @media screen and (max-width: $extra-small) {
-    max-width: 70vw;
     text-align: center;
     color: white;
     display: flex;
@@ -116,10 +115,12 @@ button,
   row-gap: 5rem;
   column-gap: 1rem;
   margin: 0 auto;
+  max-width: 85%;
   @media screen and (max-width: $small) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
   }
   @media screen and (max-width: $medium) {
     margin: 0 auto;
@@ -128,6 +129,10 @@ button,
   @media screen and (max-width: $extra-small) {
     display: none;
   }
+  @media screen and (min-width: $xl) {
+    max-width: 60%;
+    font-size: larger;
+  }
 }
 
 //Styles header
@@ -135,7 +140,11 @@ button,
 .navbar {
   display: none;
   @media screen and (max-width: $small) {
-    display: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
     font-family: $secondary-font;
   }
 }
@@ -155,6 +164,9 @@ button,
   padding: 0.5rem;
   @media screen and (max-width: $small) {
     padding: 0.5rem;
+  }
+  @media screen and (min-width: $xl) {
+    font-size: 2rem;
   }
 }
 
@@ -181,6 +193,15 @@ button,
 
 .unit-list {
   margin-left: 1rem;
+}
+
+.pages-head {
+  @media screen and (max-width: $small) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+  }
 }
 
 //Styles presentation main
@@ -226,6 +247,7 @@ button,
     height: 150px;
     margin: 2rem;
   }
+  
 }
 
 @keyframes pulse-photo {
@@ -266,6 +288,9 @@ button,
   grid-row: 3 / 3;
   margin: 0 auto;
   animation: pulse-arrow 2s infinite alternate;
+  @media screen and (min-width: $xl) {
+    width: 100px;
+  }
 }
 
 @keyframes pulse-arrow {
@@ -307,6 +332,11 @@ button,
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   @media screen and (max-width: $small) {
     margin-left: 0%;
+  }
+  @media screen and (min-width: $xl) {
+    max-width: 100%;
+    height: 100%;
+    font-size: 1rem;
   }
 }
 
@@ -475,6 +505,9 @@ button,
     justify-content: space-between;
     align-items: center;
   }
+  @media screen and (min-width: $xl) {
+    font-size: 2rem;
+  }
 }
 
 .project {
@@ -489,6 +522,7 @@ button,
   @media screen and (max-width: $small) {
     margin: 1rem;
   }
+  
 }
 
 .project:hover {
@@ -571,14 +605,23 @@ button,
   -webkit-backdrop-filter: blur(9.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  @media screen and (min-width: $xl) {
+    font-size: 2rem;
+  }
 }
 .contact-me h2 {
   font-family: $primary-font;
+  @media screen and (min-width: $xl) {
+    font-size: larger;
+  }
 }
 
 .contact-me h3 {
   font-family: $secondary-font;
   font-weight: 300;
+  @media screen and (min-width: $xl) {
+    margin: 1rem;
+  }
 }
 
 .contact-me p {
@@ -625,6 +668,9 @@ button,
   padding: 1rem;
   color: white;
   text-align: center;
+  @media screen and (min-width: $xl) {
+    font-size: 2rem;
+  }
 }
 
 .link-wp:link,
