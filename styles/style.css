@@ -150,6 +150,14 @@ button,
     font-family: "Source Sans Pro", sans-serif;
   }
 }
+@media screen and (max-width: 800px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+}
 
 .head {
   max-width: 100vw;
@@ -169,6 +177,14 @@ button,
 @media screen and (max-width: 650px) {
   .head {
     padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.2rem;
   }
 }
 @media screen and (min-width: 3300px) {
@@ -195,6 +211,11 @@ button,
   list-style: none;
 }
 @media screen and (max-width: 650px) {
+  .list {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
   .list {
     display: none;
   }
