@@ -160,10 +160,12 @@ button,
 }
 
 .head {
+  grid-column: 1/5;
   max-width: 100vw;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  right: 0;
   background-color: #000000;
   z-index: 1;
   display: flex;
@@ -694,6 +696,19 @@ button,
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+
+.code-project-link:link,
+.code-project-link:active,
+.code-project-link:visited {
+  text-decoration: none;
+  color: white;
+  margin: 0.5rem;
+  transition: all 1s;
+}
+
+.code-project-link:hover {
+  color: #B234E2;
 }
 
 .project-btn {
