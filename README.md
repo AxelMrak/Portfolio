@@ -52,7 +52,7 @@
 	<ul>
 		<li>You can get know me better.</li>
 		<li>You will be able to know the technologies that I use.</li>
-    <li>You can contact me and see my resume.</li>
+    <li>You can contact me and see my resume or CV.</li>
 	</ul>
 </div>
 
